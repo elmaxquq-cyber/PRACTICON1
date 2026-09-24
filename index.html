@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico N1 - JavaScript</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f4f9; color: #333; }
+        h1 { color: #2c3e50; }
+        ul { line-height: 1.8; }
+        li a { color: #3498db; text-decoration: none; font-weight: bold; }
+        li a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Trabajo Practico N1: Estructuras Condicionales y Entrada de Datos</h1>
+    <p>Seleccione el ejercicio que desea ejecutar (abra la consola del navegador o interactue mediante alertas segun corresponda):</p>
+    <ul>
+        <li><a href="#" onclick="loadScript('js/ejercicio01.js')">Ejercicio 1: Control de Acceso</a></li>
+        <li><a href="#" onclick="loadScript('js/ejercicio02.js')">Ejercicio 2: Cotizador de Seguros</a></li>
+        <li><a href="#" onclick="loadScript('js/ejercicio03.js')">Ejercicio 3: Liquidacion de Sueldos (Consola)</a></li>
+        <li><a href="#" onclick="loadScript('js/ejercicio04.js')">Ejercicio 4: Tarificador de Transporte</a></li>
+        <li><a href="#" onclick="loadScript('js/ejercicio05.js')">Ejercicio 5: Monotributo</a></li>
+        <li><a href="#" onclick="loadScript('js/ejercicio06.js')">Ejercicio 6: Scoring Crediticio</a></li>
+        <li><a href="#" onclick="loadScript('js/ejercicio07.js')">Ejercicio 7: Cajero Automatico</a></li>
+        <li><a href="#" onclick="loadScript('js/ejercicio08.js')">Ejercicio 8: Descuentos E-Commerce (Consola)</a></li>
+        <li><a href="#" onclick="loadScript('js/ejercicio09.js')">Ejercicio 9: Triaje Medico</a></li>
+        <li><a href="#" onclick="loadScript('js/ejercicio10.js')">Ejercicio 10: Conversor Monetario (Consola)</a></li>
+    </ul>
+
+    <script>
+        function loadScript(url) {
+            // Remove previous dynamically loaded script if any
+            const existingScript = document.getElementById('dynamic-script');
+            if (existingScript) {
+                existingScript.remove();
+            }
+            const script = document.createElement('script');
+            script.id = 'dynamic-script';
+            script.src = url;
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
